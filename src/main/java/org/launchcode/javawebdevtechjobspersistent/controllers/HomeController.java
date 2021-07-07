@@ -19,7 +19,7 @@ public class HomeController {
     public String index(Model model) {
 
         model.addAttribute("title", "My Jobs");
-
+        model.addAttribute("job", "jobs");
         return "index";
     }
 

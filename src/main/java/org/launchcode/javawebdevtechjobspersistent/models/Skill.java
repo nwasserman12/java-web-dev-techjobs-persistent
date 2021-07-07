@@ -1,12 +1,14 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
 public class Skill extends AbstractEntity {
 
+    @NotBlank
     @NotNull
     @Size(max = 500, message = "Must not exceed 500 characters")
     private String description;
